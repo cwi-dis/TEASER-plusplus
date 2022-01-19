@@ -33,6 +33,8 @@ if (NOT TEASERPP_PYTHON_VERSION)
 endif ()
 
 # Find dependencies
+# Python.
+find_package(PythonInterp 3)
 # Eigen3
 find_package(Eigen3 3.2 QUIET REQUIRED NO_MODULE)
 if (ENABLE_MKL)
